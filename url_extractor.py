@@ -14,7 +14,7 @@ url = "https://www.cnet.com" -> domain name = cnet
 """
 
 
-def extract_url(url):
+def extract_domain_from_url(url):
     # removing unnecessary spaces at the beginning and end in url:
     url = url.strip()
 
@@ -40,8 +40,8 @@ url3 = 'https://www.cnet.com'
 url4 = 'github.com/carbonfive/raygun'
 url5 = 'www.cnet.com'
 
-print(extract_url(url1))
-print(extract_url(url2))
-print(extract_url(url3))
-print(extract_url(url4))
-print(extract_url(url5))
+print(extract_domain_from_url(url1))
+print(extract_domain_from_url(url2))
+print(extract_domain_from_url(url3))
+print(extract_domain_from_url(url4))
+print(extract_domain_from_url(url5))
