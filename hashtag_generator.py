@@ -49,10 +49,14 @@ def generate_hashtag(txt):
             is_start = True
             if not c.isspace():
                 result += c
-    return result
+    if len(result) <= 140:
+        return result
+    else:
+        return False
 
 
 print(generate_hashtag(" Hello there thanks for trying my Kata"))
+print(generate_hashtag(" Hello there thanks for trying my 42 Kata"))
 print(generate_hashtag(" Hello World "))
 print(generate_hashtag(""))
 print(generate_hashtag("42"))
